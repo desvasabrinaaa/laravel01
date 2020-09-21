@@ -14,13 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('nama view');
+    return view('welcome');
 });
 
-Route::get('about1', function (){
-	return "Desva Sabrina";
+Route::get('about', function () {
+    return view('about');
 });
 
-Route::get('about2', function(){
-	return "Subang, 14 Desember 2002";
+Route::get('blog', function () {
+    return view('blog');
+});
+
+Route::get('404', function () {
+    return view('404');
 });
